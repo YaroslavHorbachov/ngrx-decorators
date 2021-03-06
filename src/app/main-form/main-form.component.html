@@ -1,0 +1,25 @@
+<form [formGroup]="form$">
+  <section>
+    <label for="name-control">Name</label>
+    <input id="name-control" type="text" formControlName="name" />
+  </section>
+
+  <section>
+    <label for="name-control">Surname</label>
+    <input id="name-control" type="text" formControlName="surname" />
+  </section>
+
+  <section>
+    <label for="name-control">Age</label>
+    <input id="name-control" type="number" formControlName="age" />
+  </section>
+
+  <section>
+    <label for="name-control">Email</label>
+    <input id="name-control" type="email" formControlName="email" />
+  </section>
+
+  <p>{{ test }}</p>
+  <p>{{ value$ | async }}</p>
+  <p>{{ formValue$ | async | json }}</p>
+</form>
